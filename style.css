@@ -18,8 +18,9 @@ body {
 }
 .logo {
     border-radius: 70%;
-    width: 70px; 
-    height: 70px; 
+    border: 1px solid #72AAB8;
+    width: 50px; 
+    height: 50px;
     object-fit: cover; 
     margin: 10px;
 }
@@ -51,7 +52,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #62929E;
+    background: #72AAB8;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -87,16 +88,16 @@ nav ul li a:hover::after{
 /*about*/
 #about {
     padding: 40px 0;
-    background: black;
+    background: #010101;
 }
 
-#about img{
+.about-pic{
     width: 100%;
     border-radius: 15px;
 }
 
 #about h1{
-    color: #62929E;
+    color: #72AAB8;
     font-size: 35px;
     font-family: 'PlayFair Display';
     margin-bottom: 20px;
@@ -123,7 +124,7 @@ nav ul li a:hover::after{
 }
 
 #about h2{
-    color: #62929E;
+    color: #72AAB8;
     font-size: 30px;
     font-family: 'PlayFair Display';
     margin-bottom: 15px;
@@ -143,6 +144,19 @@ nav ul li a:hover::after{
     font-weight: 400;
 }
 
+.link{
+    background: #72AAB8;
+    block-size: 30px;
+    border-radius: 15px;
+    width: 30px;
+}
+.links-row{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
 /*Skills*/
 
 #skills{
@@ -152,16 +166,13 @@ nav ul li a:hover::after{
 #skills h1{
     font-family: 'PlayFair Display';
     font-size: 40px;
-    text-align: center;
-    margin-top: 40px;
-    padding-top: 3%;
+    padding: 40px 10%;
 }
 
 .skills-row{
+    padding: 0px 10% 5% 10%;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 5%;
+    gap: 5%;
 }
 
 #skills h3{
@@ -169,43 +180,33 @@ nav ul li a:hover::after{
     font-size: 20px;
 }
 
-.skills-col-1{
-    flex-basis: 12%;
+.skills-col div {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 10px 10px;
 }
 
-.skills-col-3{
-    flex-basis: 12%;
+.skills-col{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    
 }
-
-.skills-col-2{
-    flex-basis: 33%;
-}
-
-.skills-col-4{
-    flex-basis: 30%;
-}
-
-skills ul li{
-    color: #FDFDFF;
-    text-decoration: none;
-    font-size: 12px;
-    position: relative;
-}
-
-#skills ul{
-    list-style: none;
-    line-height: 230%;
-}
-
 .chip{
     text-align: center;
     display: inline; 
-    background-color: rgba(152, 226, 245, 0.1); 
+    background-color: rgba(152, 226, 245, 0.2); 
     border-radius: 20px; 
     font-size: 15px;
     font-weight: 400;
-    color: #98E2F5;
+    color: #6adaf6;
     /*width: fit-content;*/
     background-size: 50%;
-    padding: 5px;
+    padding: 5px 10px;
 }
