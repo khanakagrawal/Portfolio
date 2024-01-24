@@ -217,7 +217,6 @@ nav ul li a:hover::after{
     border-radius: 20px;
     padding: 20px;
     background-color: #222526;
-    
 }
 .big-chip{
     text-decoration: none;
@@ -240,19 +239,20 @@ nav ul li a:hover::after{
 /* Experience */
 #Experience{
     background: #030303;
-    border-left: 1px solid #72AAB8;
-    margin-left: 3%;
+    /* border-left: 1px solid #72AAB8;
+    margin-left: 3%; */
+    padding-bottom: 5%;
 }
 
 #Experience h1{
     font-family: "Playfair Display";
     font-size: 50px;
-    padding: 60px 10% 40px 5%;
+    padding: 60px 10% 40px 10%;
     color: #B5B2A8;
 }
 
 #Experience .experience{
-    padding: 20px 5%;
+    padding: 20px 10%;
 }
 
 #Experience .experience h5{
@@ -289,4 +289,34 @@ nav ul li a:hover::after{
     flex-wrap: wrap;
     align-content: flex-start;
     gap: 6px;
+}
+
+/* Projects */
+#Projects{
+    background: #3F3F3F;
+}
+
+#Projects h1{
+    font-family: "Playfair Display";
+    font-size: 40px;
+    text-align: center;
+    padding: 5%;
+    color:#B5B2A8;
+}
+
+#Projects .row{
+    gap: 10%;
+    align-items: flex-start;
+    padding: 10%;
+}
+.project {
+    background-color: #222526;
+    padding: 30px;
+    border-radius: 25px;
+}
+
+.project h3{
+    font-family: 'Playfair Display';
+    color:#72AAB8;
+    font-size: 20px;
 }
