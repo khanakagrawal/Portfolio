@@ -77,7 +77,7 @@ nav ul li a:hover::after{
 .header-text h1{
     font-size: 100px;
     font-family: 'PlayFair Display';
-    color: #C6C5B9;
+    color: #B5B2A8;
 }
 
 .header-text h5{
@@ -145,7 +145,7 @@ nav ul li a:hover::after{
 }
 
 .link{
-    background: #72AAB8;
+    background: #546A7B;
     block-size: 30px;
     border-radius: 15px;
     width: 30px;
@@ -160,7 +160,7 @@ nav ul li a:hover::after{
 
 .button{
     padding: 5px 10px;
-    background-color:#72AAB8;
+    background-color:#546A7B;
     color:#fff;
     text-decoration: none;
     font-size: 13px;
@@ -172,7 +172,7 @@ nav ul li a:hover::after{
 /*Skills*/
 
 #skills{
-    background: #393D3F;
+    background: #393E40;
 }
 
 #skills h1{
@@ -188,7 +188,6 @@ nav ul li a:hover::after{
 }
 
 #skills h3{
-     /*font-family: 'Playfair Display';*/
     font-size: 20px;
 }
 
@@ -207,13 +206,13 @@ nav ul li a:hover::after{
     gap: 20px;
     border-radius: 20px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #222526;
     
 }
-.chip{
+.big-chip{
     text-align: center;
     display: inline; 
-    background-color: rgba(152, 226, 245, 0.2); 
+    background-color: rgba(152, 226, 245, 0.15); 
     border-radius: 20px; 
     font-size: 15px;
     font-weight: 400;
@@ -223,3 +222,54 @@ nav ul li a:hover::after{
 }
 
 
+/* Experience */
+#Experience{
+    background: #030303;
+}
+
+#Experience h1{
+    font-family: "Playfair Display";
+    font-size: 50px;
+    padding: 60px 10% 40px 10%;
+    color: #B5B2A8;
+}
+
+#Experience .experience{
+    padding: 20px 12%;
+}
+
+#Experience .experience h5{
+    font-weight: 700;
+    color: #B5B2A8;
+}
+
+#Experience .experience h2{
+    font-family: 'Playfair Display';
+    color:#72AAB8;
+}
+
+#Experience .experience h4{
+    margin-top: 10px;
+    color: #B5B2A8;
+}
+
+.chip{
+    text-align: center;
+    display: inline; 
+    background-color: rgba(152, 226, 245, 0.2); 
+    border-radius: 20px; 
+    font-size: 12px;
+    font-weight: 400;
+    color: #6adaf6;
+    background-size: 50%;
+    padding: 3px 6px;
+}
+
+.chips{
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 6px;
+}
