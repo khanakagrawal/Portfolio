@@ -48,6 +48,10 @@ nav ul li a{
     position: relative;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 nav ul li a::after{
     content: '';
     width: 0;
@@ -137,6 +141,11 @@ nav ul li a:hover::after{
 
 #about a{
     text-decoration: underline;
+    color: inherit;
+}
+
+#about a:hover{
+    color:#72AAB8;
 }
  
 .bold{
@@ -150,6 +159,7 @@ nav ul li a:hover::after{
     border-radius: 15px;
     width: 30px;
 }
+
 .links-row{
     margin-top: 15px;
     display: flex;
@@ -210,8 +220,9 @@ nav ul li a:hover::after{
     
 }
 .big-chip{
+    text-decoration: none;
     text-align: center;
-    display: inline; 
+    display: inline-block; 
     background-color: rgba(152, 226, 245, 0.15); 
     border-radius: 20px; 
     font-size: 15px;
@@ -221,21 +232,27 @@ nav ul li a:hover::after{
     padding: 5px 10px;
 }
 
+.big-chip:hover{
+    color: #B5B2A8;
+    background-color: rgba(152, 226, 245, 0.15); 
+}
 
 /* Experience */
 #Experience{
     background: #030303;
+    border-left: 1px solid #72AAB8;
+    margin-left: 3%;
 }
 
 #Experience h1{
     font-family: "Playfair Display";
     font-size: 50px;
-    padding: 60px 10% 40px 10%;
+    padding: 60px 10% 40px 5%;
     color: #B5B2A8;
 }
 
 #Experience .experience{
-    padding: 20px 12%;
+    padding: 20px 5%;
 }
 
 #Experience .experience h5{
@@ -249,7 +266,7 @@ nav ul li a:hover::after{
 }
 
 #Experience .experience h4{
-    margin-top: 10px;
+    margin-top: 8px;
     color: #B5B2A8;
 }
 
