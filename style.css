@@ -10,6 +10,7 @@
 body {
     background: black;
     color: #fff; /*maybe change this?*/
+    padding-top: 60px;
 }
 #header {
     background: #3F3F3F;
@@ -33,6 +34,12 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #3F3F3F; 
+    z-index: 1000; 
 }
 
 nav ul li {
@@ -47,6 +54,7 @@ nav ul li a{
     font-size: 18px;
     position: relative;
 }
+
 
 html {
     scroll-behavior: smooth;
@@ -73,7 +81,8 @@ nav ul li a:hover::after{
 }
 
 .header-text h4{
-    margin-top: 18%;
+    padding-top: 250px;
+    padding-left: 4px;
     font-size: 30px;
     letter-spacing: 1px;
 }
@@ -85,13 +94,14 @@ nav ul li a:hover::after{
 }
 
 .header-text h5{
-    padding: 10px;
+    padding-top: 10px;
+    padding-left: 4px;
     font-size: 30px;
 }
 
 /*about*/
 #about {
-    padding: 40px 0;
+    padding: 80px 0;
     background: #010101;
 }
 
@@ -188,7 +198,7 @@ nav ul li a:hover::after{
 #skills h1{
     font-family: 'PlayFair Display';
     font-size: 40px;
-    padding: 40px 10%;
+    padding: 60px 10%;
 }
 
 .skills-row{
@@ -247,7 +257,7 @@ nav ul li a:hover::after{
 #Experience h1{
     font-family: "Playfair Display";
     font-size: 50px;
-    padding: 60px 10% 40px 10%;
+    padding: 70px 10% 40px 10%;
     color: #B5B2A8;
 }
 
@@ -300,23 +310,26 @@ nav ul li a:hover::after{
     font-family: "Playfair Display";
     font-size: 40px;
     text-align: center;
-    padding: 5%;
+    padding-top: 5%;
     color:#B5B2A8;
 }
 
 #Projects .row{
-    gap: 10%;
+    gap: 5%;
     align-items: flex-start;
-    padding: 10%;
+    padding: 5% 10% 0px 10%;
 }
 .project {
-    background-color: #222526;
-    padding: 30px;
+    background-color: #030303;
+    width: 28%;
+    height: 300px;
     border-radius: 25px;
+    text-align: center;
 }
 
 .project h3{
     font-family: 'Playfair Display';
     color:#72AAB8;
     font-size: 20px;
+    padding: 5%;
 }
