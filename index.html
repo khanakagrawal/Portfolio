@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7730a57ea4.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -19,8 +20,8 @@
                     <li><a href="#about">About me</a></li>
                     <li><a href="#skills" >Skills</a></li>
                     <li><a href="#Experience">Experience</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-text">
@@ -44,7 +45,7 @@
                     <div class="links-row">
                         <a href="https://github.com/khanakagrawal" target="_blank"><img src="images/github logo.png" class="link" alt="button to github"></a>
                         <a href="www.linkedin.com/in/khanak-agrawal" target="_blank"><img src="images/linkedin logo.png" class="link" alt="button to linkedin"></a>
-                        <button class="button" type="submit" formaction="">Cover Letter & Resume</button>
+                        <a href="" download><button class="button" type="submit" formaction="">Cover Letter & Resume</button></a>
                     </div>
                 </div>
                 <h2>My Philosophy</h2>
@@ -63,13 +64,13 @@
                 <div class="skills-col">
                     <h3><span class="bold">Languages:</span></h3>
                     <div>
-                        <span class="big-chip">Java</span>
+                        <a href="#google"><span class="big-chip">Java</span></a>
                         <span class="big-chip">Python (Numpy, Pandas, Matplotlib)</span>
                         <span class="big-chip">C</span>
                         <span class="big-chip">HTML</span>
                         <span class="big-chip">CSS</span>
                         <span class="big-chip">Javascript</span>
-                        <span class="big-chip">SQL</span>
+                        <a href="#google"><span class="big-chip">SQL</span></a>
                         <span class="big-chip">Assembly</span>
                     </div>
                 </div>
@@ -83,11 +84,13 @@
                         <span class="big-chip">Linux</span>
                         <a href="#google"><span class="big-chip">Remote Procedure Call (RPC)</span></a>
                         <a href="#google"><span class="big-chip">Protocol Buffers</span></a>
+                        <a href="#google"><span class="big-chip">Asynchronous Programming</span></a>
+                        <a href="#google"><span class="big-chip">Databases</span></a>
                         <span class="big-chip">Linear Algebra</span>
-                        <span class="big-chip">Calculus</span>
+                        <span class="big-chip">Multi-variable Calculus</span>
                         <span class="big-chip">Web Developement</span>
                         <span class="big-chip">Data Analysis</span>
-                        <span class="big-chip">Discrete Probability</span>
+                        <a href="#312-332"><span class="big-chip">Discrete Probability</span></a>
                         <span class="big-chip">Statistics</span>
                         <span class="big-chip">Set Theory</span>
                         <span class="big-chip">Microsoft Office Suite</span>
@@ -103,29 +106,41 @@
             <div id="google">
                 <h5>JUNE - SEP 2023</h5>
                 <h2>Google STEP internship</h2>
-                <h4>Worked on Execution Systems Platform under Google Cloud technical infrastructure.
-                    <br>Contributed to overall automation and capitalizing ~$100 million of inventory through migration project from cron jobs to push model for material lifecycle management in the data center. 
-                    <br>Collaborated with partner teams to understand infrastructure and align on new use case.
-                    <br>Created an approved, 18-page low-level project design document.
-                    <br>Implemented in Java. Created generator, integration, orchestrator, and unit tests and modified existing remote procedure calls. Applied asynchronous programming, querying data (SQL), protocol buffers, spanner, etc.</h4>
+                <h4>Interning at Google was a pivotal experience for me as a SWE technically and professionally. 
+                    Every part of the process, onboarding, creating an extensive low-level design document, writing code, submitting CLs, and testing, etc., taught so much about the day-to-day of a SWE and project lifecycle in big-tech and it helped me realize the type of SWE I hope to be one day. 
+                    It was challenging yet captivating to read, understand, and write to such a large codebase and create a tool that merged infrastructures of two different teams.
+                    I also learned more about professional communication, relationships, and team work. </h4>
                 <div class="chips">
+                    <span class="chip">Java</span>
                     <span class="chip">Protocol Buffers</span>
                     <span class="chip">Remote Procedure Call (RPC)</span>
-                    <span class="chip">Statistics</span>
-                    <span class="chip">Statistics</span>
+                    <span class="chip">SQL</span>
+                    <span class="chip">Databases</span>
+                    <span class="chip">Promise Graph</span>
+                    <span class="chip">Design Docs</span>
+                    <span class="chip">Asynchronous programming</span>
+                    <span class="chip">Version Control Systems</span>
+                    <span class="chip">Dev, Staging, Prod</span>
                 </div>
             </div> 
         </div>
         <div class="experience">
-            <div class="cse312">
-
-            </div>
-            <h5>JAN - MARCH 2024</h5>
-            <h2>CSE 312, CSE 332</h2>
-            <h4>description</h4>
-            <div class="chips">
-                <span class="chip">Discrete Probability</span>
-                <span class="chip">Statistics</span>
+            <div id="312-332">
+                <h5>JAN - MARCH 2024</h5>
+                <h2>CSE 312, CSE 332</h2>
+                <h4>CSE 312 is a core class where we dived deep into foundational, theoritical concepts. 
+                    We focused primarily on probability and statistics and their role in computer science. 
+                    We also got to learn a little bit of machine learning, including implementing some basic ML algorithms and concepts like the Laplace smoothing.</h4>
+                    CSE 332 is another core class on data structures and algorithms. 
+                    We learned about time complexity, 
+                <div class="chips">
+                    <span class="chip">Discrete Probability</span>
+                    <span class="chip">Concentration Inequalities</span>
+                    <span class="chip">Machine Learning</span>
+                    <span class="chip">Statistical Inference</span>
+                    <span class="chip">Statistical Estimation</span>
+                    <span class="chip">Statistical Estimation</span>
+                </div>
             </div>
         </div>
         <div class="experience">
@@ -161,22 +176,61 @@
         <h1>Projects</h1>
         <div class="row">
             <div class="project">
-                <h3>Data Visualization</h3>
+                <img src="images/data-vis.jpg">
+                <div class="layer">
+                    <h3>Data Visualization</h3>
+                    <p>Created interactive data visualizations like a 3D scatter plot, pie chart, line graph, etc. for a Kaggle dataset regarding insurance costs correlated to demographic factors and smoking habits.
+                        Geared to reveal the expensive US healthcare system and financial costs of smoking.</p>
+                        <a href="https://medium.com/@khanakagrawal01/analyzing-trends-in-insurance-and-smoking-d7a5c8ca5c2d"><i class="fa-solid fa-link" style="color: #000000;"></i></a>
+                </div>
             </div>
             <div class="project">
-                <h3>This Website</h3>
+                <img src="images/website.png">
+                <div class="layer">
+                    <h3>This Website</h3>
+                    <p>This website was a project I took on to learn web-development. It was a fun challenge and I enjoyed working on it throughout the process because I got apply my passion for design and art with programming.</p>
+                    <a href="https://github.com/khanakagrawal/Portfolio"><i class="fa-solid fa-link" style="color: #000000;"></i></a>
+                </div>
             </div>
             <div class="project">
-                <h3>And many more!</h3>
+                <img src="images/tree.png">
+                <div class="layer">
+                    <h3>Data Structures</h3>
+                    <p>Implemented various data structures like a stack made of an Array, a tree of maps and sets, etc. COMPELETE THIS</p>
+                    <a href="#"><i class="fa-solid fa-link" style="color: #000000;"></i></a>
+                </div>
             </div>
         </div>
-
+        <h4>And many more in the process of being actualized...</h4>
     </div>
 
-    <div id="Contact">
-
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="left">
+                    <h1>Get in touch</h1>
+                    <p><i class="fa-solid fa-envelope"></i>khanakagrawal01@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>425-230-7082</p>
+                    <div class="links-row">
+                        <a href="https://github.com/khanakagrawal" target="_blank"><img src="images/github logo.png" class="link" alt="button to github"></a>
+                        <a href="www.linkedin.com/in/khanak-agrawal" target="_blank"><img src="images/linkedin logo.png" class="link" alt="button to linkedin"></a>
+                        <a href="" download><button class="button" type="submit" formaction="">Cover Letter & Resume</button></a>
+                    </div>
+                </div>
+                <div class="right">
+                    <form>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="5" placeholder="Message"></textarea>
+                        <button class="button" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-
+    <div class="copyright">
+        <p>Copyright © Khanak Agrawal 2023 </p>
+    </div>
 <script>
     
 </script>
