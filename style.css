@@ -436,8 +436,8 @@ form input, form textarea{
     background: #3F3F3F;
     padding: 15px;
     margin: 15px 0;
-    color: #fff;
-    font-weight: 700;
+    color: #FDFDFF;
+    font-weight: 400;
     font-size: 13px;
 }
 form .button{

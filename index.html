@@ -252,7 +252,7 @@
                     </div>
                 </div>
                 <div class="right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="name" placeholder="Your Name" required>
                         <input type="email" name="email" placeholder="Your Email" required>
                         <textarea name="message" rows="5" placeholder="Message"></textarea>
@@ -268,6 +268,23 @@
 <script>
     
 </script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxhuK6FKWIzdLoGAqhQKzaDbQ9h7IiaoSw-KImlhoTEl9-BH4bOw-YxYXCKBFbxfEPz4Q/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            console.log('Success!', response)
+            // TODO: fix the delay in reset
+            // TODO: figure out why the box turns white when you autofill
+            form.reset() 
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html>
 
