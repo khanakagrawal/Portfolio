@@ -58,6 +58,8 @@ nav ul li a{
     position: relative;
 }
 
+/* TODO: add media queries */
+
 
 html {
     scroll-behavior: smooth;
